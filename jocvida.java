@@ -89,4 +89,84 @@ public class JocDeLaVida {
 		int randomveins=0;
 		
 		if((randomfila!=0 && randomcolumna!=0)&&(randomfila!=Etapa1.length && randomcolumna!=Etapa1.length)) {
+            while(contveins<4){
 		
+					
+					
+                if((randomfila!=0 && randomcolumna!=0) && (randomfila!=Etapa1.length && randomcolumna!=Etapa1.length)) {
+                    
+                if(randomfila<Etapa1.length-1 && randomcolumna<Etapa1.length-1) {
+                if(randomfila+1<Etapa1.length && randomcolumna+1<Etapa1.length) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        Etapa1[randomfila+1][randomcolumna+1]=1;
+                        contveins++;
+                    }
+                }
+                if(randomfila+1>0) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila+1][randomcolumna]=1;
+                    }
+                }
+                if(randomfila+1<Etapa1.length && randomcolumna-1>0) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila+1][randomcolumna-1]=1;
+                    }
+                }
+                if(randomcolumna+1<Etapa1.length) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila][randomcolumna+1]=1;
+                    }
+                }
+                if (randomcolumna-1>0) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila][randomcolumna-1]=1;
+                    }
+                }
+                if(randomfila-1>0 && randomcolumna-1>0) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila-1][randomcolumna-1]=1;
+                    }
+                }
+                if(randomfila-1>0) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila-1][randomcolumna]=1;
+                    }
+                }
+                if(randomfila-1>0 && randomcolumna+1<Etapa1.length) {
+                    randomveins=(int)(Math.random()*2);
+                    
+                    if(randomveins==1) {
+                        contveins++;
+                        Etapa1[randomfila-1][randomcolumna+1]=1;
+                    }
+                }
+                }
+                }
+                
+            
+                
+        }
+
+    
+    }
+}
