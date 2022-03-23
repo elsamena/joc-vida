@@ -226,3 +226,13 @@ public static void Evolucio(int Etapa1[][]) {
         }
     }
 }
+public static void Imprimir(int Etapa1[][]) {
+		
+    for(int i=0;i<Etapa1.length;i++) {
+        for(int j=0;j<Etapa1.length;j++) {
+            System.out.print(Etapa1[i][j]+" ");
+        }
+        System.out.println();
+    }
+
+}
