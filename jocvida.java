@@ -172,3 +172,57 @@ public class JocDeLaVida {
 }
 public static void Evolucio(int Etapa1[][]) {
     int contv=0;
+    for(int i=0;i<Etapa1.length;i++) {
+        for(int j=0;j<Etapa1.length;j++) {
+            contv=0;
+            
+            if((i!=0 && j!=0) && (i!=Etapa1.length && j!=Etapa1.length)) {
+                
+            if(i<Etapa1.length-1 && j<Etapa1.length-1) {
+            
+            if(Etapa1[i+1][j+1]==1) {
+                contv++;
+            }
+            if(Etapa1[i+1][j]==1) {
+                contv++;
+            }
+            if(Etapa1[i+1][j-1]==1) {
+                contv++;
+            }
+            if(Etapa1[i][j+1]==1) {
+                contv++;
+            }
+            if(Etapa1[i][j-1]==1) {
+                contv++;
+            }
+            if(Etapa1[i-1][j+1]==1) {
+                contv++;
+            }
+            if(Etapa1[i-1][j]==1) {
+                contv++;
+            }
+            if(Etapa1[i-1][j-1]==1) {
+                contv++;
+            }
+        if(contv<=1) {
+            Etapa1[i][j]=0;
+        }
+        if(contv>=4) {
+            Etapa1[i][j]=0;
+        }
+        if( contv==3) {
+            Etapa1[i][j]=1;
+        }
+        
+        if(contv==2 && Etapa1[i][j]==1) {
+            Etapa1[i][j]=1;
+        }
+        else {
+            Etapa1[i][j]=0;
+        }
+        
+    }
+            }
+        }
+    }
+}
