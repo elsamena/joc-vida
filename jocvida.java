@@ -236,3 +236,4 @@ public static void Imprimir(int Etapa1[][]) {
     }
 
 }
+}
