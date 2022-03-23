@@ -170,3 +170,5 @@ public class JocDeLaVida {
     
     }
 }
+public static void Evolucio(int Etapa1[][]) {
+    int contv=0;
